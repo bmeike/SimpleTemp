@@ -1,0 +1,51 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="actionBarTheme">@style/AppTheme.AppBarOverlay</item>
+        <item name="android:itemBackground">@color/colorAccent</item>
+        <item name="android:itemTextAppearance">@style/MenuItem</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="MenuItem">
+        <item name="android:textColor">@color/textColor</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:textColorPrimary">@color/textColorLight</item>
+    </style>
+
+    <style name="Text">
+        <item name="android:textColor">@color/textColor</item>
+    </style>
+
+    <style name="Text.Info">
+        <item name="android:textSize">@dimen/text_small</item>
+    </style>
+
+    <style name="Text.Label">
+        <item name="android:textSize">@dimen/text_medium</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Button">
+        <item name="android:backgroundTint" tools:targetApi="lollipop">@color/colorPrimaryDark
+        </item>
+    </style>
+
+    <style name="Button.Small">
+        <item name="android:minHeight">0dp</item>
+        <item name="android:minWidth">0dp</item>
+        <item name="android:textSize">10sp</item>
+    </style>
+</resources>

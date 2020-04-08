@@ -1,0 +1,22 @@
+
+# Mac
+.DS_Store
+
+# Gradle files
+local.properties
+.gradle/
+build/
+
+# Intellij
+.idea/
+*.iml
+
+# Log Files
+*.log
+
+# Keys
+keys
+
+# Screenshots
+screenshots
+

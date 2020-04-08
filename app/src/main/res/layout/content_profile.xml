@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".ProfileActivity"
+    >
+
+    <TextView
+        android:id="@+id/label_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/label_address"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/name"
+        android:text="@string/label_name"
+        style="@style/Text.Label"
+        />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/label_name"
+        app:layout_constraintBaseline_toBaselineOf="@+id/label_name"
+        android:layout_marginStart="@dimen/medium_spacer"
+        android:selectAllOnFocus="true"
+        android:inputType="textPersonName"
+        android:hint="@string/prompt_name"
+        />
+
+    <TextView
+        android:id="@+id/label_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/label_name"
+        app:layout_constraintBottom_toTopOf="@+id/label_street"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="@dimen/medium_spacer"
+        android:text="@string/label_address"
+        style="@style/Text.Label"
+        />
+
+    <TextView
+        android:id="@+id/label_street"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/label_address"
+        app:layout_constraintBottom_toTopOf="@+id/label_city"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/street"
+        android:layout_marginStart="@dimen/medium_spacer"
+        android:text="@string/label_street"
+        style="@style/Text.Label"
+        />
+
+    <EditText
+        android:id="@+id/street"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/label_street"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBaseline_toBaselineOf="@+id/label_street"
+        android:layout_marginStart="@dimen/medium_spacer"
+        android:inputType="textPostalAddress"
+        android:selectAllOnFocus="true"
+        android:hint="@string/prompt_street"
+        />
+
+    <TextView
+        android:id="@+id/label_city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/label_street"
+        app:layout_constraintBottom_toTopOf="@+id/label_state"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/city"
+        android:layout_marginTop="@dimen/medium_spacer"
+        android:layout_marginStart="@dimen/medium_spacer"
+        android:text="@string/label_city"
+        style="@style/Text.Label"
+        />
+
+    <EditText
+        android:id="@+id/city"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBaseline_toBaselineOf="@+id/label_city"
+        app:layout_constraintStart_toEndOf="@+id/label_city"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="@dimen/medium_spacer"
+        android:inputType="textPostalAddress"
+        android:selectAllOnFocus="true"
+        android:hint="@string/prompt_city"
+        />
+
+    <TextView
+        android:id="@+id/label_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/label_city"
+        app:layout_constraintBottom_toTopOf="@+id/label_conditions"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/state"
+        android:layout_marginTop="@dimen/medium_spacer"
+        android:layout_marginStart="@dimen/medium_spacer"
+        android:text="@string/label_state"
+        style="@style/Text.Label"
+        />
+
+    <EditText
+        android:id="@+id/state"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/label_state"
+        app:layout_constraintEnd_toStartOf="@+id/label_zip"
+        app:layout_constraintBaseline_toBaselineOf="@+id/label_state"
+        android:layout_marginStart="@dimen/medium_spacer"
+        android:inputType="textPostalAddress"
+        android:selectAllOnFocus="true"
+        android:hint="@string/prompt_state"
+        />
+
+    <TextView
+        android:id="@+id/label_zip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBaseline_toBaselineOf="@+id/label_state"
+        app:layout_constraintStart_toEndOf="@+id/state"
+        app:layout_constraintEnd_toStartOf="@+id/zip"
+        android:layout_marginTop="@dimen/medium_spacer"
+        android:layout_marginStart="@dimen/medium_spacer"
+        android:text="@string/label_zip"
+        style="@style/Text.Label"
+        />
+
+    <EditText
+        android:id="@+id/zip"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBaseline_toBaselineOf="@+id/label_state"
+        app:layout_constraintStart_toEndOf="@+id/label_zip"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="@dimen/medium_spacer"
+        android:inputType="textPostalAddress"
+        android:selectAllOnFocus="true"
+        android:hint="@string/prompt_zip"
+        />
+
+    <TextView
+        android:id="@+id/label_birth_year"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/label_state"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/birth_year"
+        android:layout_marginTop="@dimen/medium_spacer"
+        android:selectAllOnFocus="true"
+        android:text="@string/label_birth_year"
+        style="@style/Text.Label"
+        />
+
+    <EditText
+        android:id="@+id/birth_year"
+        android:layout_width="@dimen/width_4_digit_number"
+        android:layout_height="wrap_content"
+        app:layout_constraintBaseline_toBaselineOf="@+id/label_birth_year"
+        app:layout_constraintStart_toEndOf="@+id/label_birth_year"
+        android:layout_marginStart="@dimen/medium_spacer"
+        android:inputType="numberDecimal"
+        android:selectAllOnFocus="true"
+        android:hint="@string/prompt_birth_year"
+        />
+
+    <TextView
+        android:id="@+id/label_conditions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/label_birth_year"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="@dimen/medium_spacer"
+        android:selectAllOnFocus="true"
+        android:text="@string/label_conditions"
+        style="@style/Text.Label"
+        />
+
+    <CheckBox
+        android:id="@+id/condition_heart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/label_conditions"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="@dimen/medium_spacer"
+        android:text="@string/label_heart"
+        />
+
+    <CheckBox
+        android:id="@+id/condition_respiratory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/condition_heart"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="@dimen/medium_spacer"
+        android:text="@string/label_respiratory"
+        />
+
+    <CheckBox
+        android:id="@+id/condition_diabetes"
+        android:text="@string/label_diabetes"
+        app:layout_constraintTop_toBottomOf="@+id/condition_respiratory"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="@dimen/medium_spacer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <CheckBox
+        android:id="@+id/condition_depression"
+        android:text="@string/label_depression"
+        app:layout_constraintTop_toBottomOf="@+id/condition_diabetes"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="@dimen/medium_spacer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <Button
+        android:id="@+id/add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:backgroundTint="@color/colorAccent"
+        android:text="@string/action_add"
+        tools:targetApi="lollipop"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

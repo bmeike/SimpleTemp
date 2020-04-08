@@ -1,0 +1,90 @@
+<resources>
+    <string name="app_name">SimpleTemp</string>
+    <string name="menu_about">About</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_unlock">Unlock</string>
+    <string name="action_register">Register</string>
+    <string name="login_ins">Enter the password you have chosen to keep your data private</string>
+    <string name="register_ins">Enter a password of at least 6 characters.  It will be used to keep your data private</string>
+    <string name="retry">That\'s not the right password.  Retry?</string>
+    <string name="about_login">
+        <![CDATA[
+        <body bgcolor="#ffe082">
+        <h2>SimpleTemp</h2>
+        This application may help us track the coronavirus.  In the absence of sufficient testing,
+        we hope that by crowd-sourcing temperatures, we can identify outbreaks of the virus
+        so that the affected communities can get the help they need.<br /><br />
+        You may use the app on a single phone to track the temperatures of a few people.
+        When you report a temperature for one of the people you are monitoring, the temperature
+        and a few other details are sent to a central server, for analysis.  As more people do it
+        you will be able to see the temperatures of people around you.<br /><br />
+        Note that nothing in the report sent to the server, can identify you:
+        <ul>
+        <li>The report includes a unique identifier.  That identifier is encrypted on your phone and can only be decrypted with your password.</li>
+        <li>The report include location information.  That information is rounded to the nearest mile.</li>
+        <li>The app has no facility for connecting with other installments on other phones.  It cannot report interactions.</li>
+        </ul>
+        Join the SimpleTemp movement and stay safe!
+        </body>
+        ]]>
+    </string>
+
+    <string name="location_rational">
+        In order to share or view community temperature data, you will have to enable
+        location services.  All location data is smudged to an accuracy of no greater
+        than 1km in order to anonymize it.  Would you like to turn location services
+        on now?
+    </string>
+
+    <string name="location_request">
+        In order to share or view community temperature data, you will have to enable
+        location services.  All location data is smudged to an accuracy of no greater
+        than 1km in order to anonymize it.  Would you like to turn location services
+        on now?
+    </string>
+
+    <string name="dismiss">Dismiss</string>
+    <string name="title_activity_people">People</string>
+
+    <string name="title_activity_person_detail">Profile</string>
+
+    <string name="label_name">Name:</string>
+    <string name="label_birth_year">Birth Year:</string>
+    <string name="label_address">Address:</string>
+    <string name="label_street">Street:</string>
+    <string name="label_city">City:</string>
+    <string name="label_state">State:</string>
+    <string name="label_zip">ZIP:</string>
+
+    <string name="prompt_name">name</string>
+    <string name="prompt_birth_year">birth year</string>
+    <string name="prompt_street">street</string>
+    <string name="prompt_city">city</string>
+    <string name="prompt_state">state</string>
+    <string name="prompt_zip">zip</string>
+
+    <string name="label_conditions">Pre-existing conditions:</string>
+    <string name="label_heart">Heart Disease</string>
+    <string name="label_respiratory">Chronic Respiratory Disease</string>
+    <string name="label_diabetes">Diabetes</string>
+    <string name="label_depression">Anxiety/Depression</string>
+
+    <string name="action_add">add</string>
+    <string name="action_update">update</string>
+
+    <string name="error_empty_name">Profile name may not be empty</string>
+    <string name="error_birth_year">\'Age\' must be an integer between 1900 and 2021</string>
+    <string name="error_zip">That zipcode doesn\'t look right…</string>
+
+    <string name="desc_temp_button">Push to record a temperature</string>
+    <string name="prompt_temp">temperature</string>
+    <string name="label_cough">cough</string>
+    <string name="label_tired">tiredness</string>
+    <string name="label_breathing">difficulty breathing</string>
+    <string name="label_symptoms">Other symptoms</string>
+    <string name="label_temp">Thermometer reading:</string>
+    <string name="yes">yes</string>
+    <string name="no">no</string>
+    <string name="ok">ok</string>
+
+</resources>

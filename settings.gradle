@@ -1,0 +1,2 @@
+rootProject.name='SimpleTemp'
+include ':app'
